@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Assistant Backup</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #1f2328;
+      --muted: #59636e;
+      --link: #0969da;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0d1117;
+        --fg: #e6edf3;
+        --muted: #9198a1;
+        --link: #4493f8;
+      }
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+    }
+
+    main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 48px 16px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      margin: 0 0 8px;
+    }
+
+    p.lead {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    a {
+      color: var(--link);
+    }
+
+    footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: .9rem;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Home Assistant Backup</h1>
+    <p class="lead">A personal, non-commercial Google Cloud app that lets my own Home Assistant installation store
+      backups in my own Google Drive.</p>
+
+    <h2>What it does</h2>
+    <p>This app is used only by the Home Assistant <em>Google Drive</em> integration on my private home server. After I
+      sign in with my Google account, Home Assistant uploads its backup files to a folder in my Google Drive and can
+      list, download and delete those same backup files.</p>
+
+    <h2>Google data access</h2>
+    <p>The app requests only the <code>https://www.googleapis.com/auth/drive.file</code> scope. That scope gives access
+      only to files the app itself created or that I explicitly opened with it. It cannot see any other files in my
+      Drive.</p>
+
+    <h2>Who can use it</h2>
+    <p>This app is not offered to the public. It is used only by me and members of my household for our own Home
+      Assistant installation.</p>
+
+    <p><a href="privacy.html">Privacy policy</a></p>
+
+    <footer>Contact: willem.alexander.lenaerts@gmail.com</footer>
+  </main>
+</body>
+
+</html>
